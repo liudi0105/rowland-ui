@@ -25,6 +25,7 @@ const DefaultButton = styled(BasicButton)`
 
 const PrimaryButton = styled(BasicButton)<ButtonProps>`
   background-color: ${(props) => props.theme.colors.primary};
+  color: #fff;
   &:hover {
     background-color: ${(props) => props.theme.colors.hover};
   }
