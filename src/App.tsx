@@ -28,7 +28,7 @@ function App() {
           <ClockCircleFilled />
         </Spin>
       </span>
-      <Checkbox onChange={(c) => setChecked(c)} value={checked} />
+      <Checkbox onChange={(c) => setChecked(c)} checked={checked} />
       <Switch value={switchOpen} onChange={(value) => setSwitchOpen(value)} />
       <Button buttonStyle="primary">Primary Button</Button>
       <Button buttonStyle="default">Default Button</Button>
