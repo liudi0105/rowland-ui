@@ -3,8 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import { Button } from "./components/Button";
 import { Checkbox } from "./components/Checkbox";
-import { Collapse } from "./components/Collapse";
-import { Radio } from "./components/Radio";
+import { RadioGroup } from "./components/Radio";
 import { Space } from "./components/Space";
 import { Spin } from "./components/Spin";
 import { Switch } from "./components/Switch";
@@ -18,10 +17,17 @@ function App() {
 
   return (
     <Space direction="vertical" size="large">
-      <Radio
-        label="A"
-        onChange={(c) => setRadioChecked(c)}
-        value={radioChecked}
+      <RadioGroup
+        options={[
+          {
+            value: "a",
+            label: "A",
+          },
+          {
+            value: "b",
+            label: "B",
+          },
+        ]}
       />
       <span style={{ color: "#000" }}>
         <Spin>
